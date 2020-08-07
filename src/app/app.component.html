@@ -1,0 +1,75 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!--<div *ngFor="let item of txt | keyvalue">-->
+<!--  {{item.key}}:{{item.value}}-->
+<!--</div>-->
+<!--<button (click)="test()">MOHAMED</button>-->
+<!--<div class="container">-->
+
+<!--  <h1 class="title">-->
+<!--    Hello Team-->
+<!--  </h1>-->
+
+<!--<div class="card">-->
+<!--  <img src="assets/card_img.jpg">-->
+<!--  <div class="card-content">-->
+<!--    <h1>Card title</h1>-->
+<!--    <p>-->
+<!--      lorem ipsum dolor sit amet, consectetur adipiscing elit,-->
+<!--      sed do eiusmod tempor incididunt ut labore-->
+<!--      et dolore manga aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo peeep peeep peep peeeeeep peeep-->
+<!--    </p>-->
+<!--  </div>-->
+<!--</div>-->
+
+<!--<div class="card card2">-->
+<!--  <img src="assets/card_img.jpg">-->
+<!--  <div class="card-content">-->
+<!--    <h1>Card title</h1>-->
+<!--    <p>-->
+<!--      lorem ipsum dolor sit amet, consectetur adipiscing elit,-->
+<!--      sed do eiusmod tempor incididunt ut labore-->
+<!--      et dolore manga aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo peeep peeep peep peeeeeep peeep-->
+<!--    </p>-->
+<!--    <div class="btn-wrapper">-->
+<!--      <button class="btn">Buy Now</button>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
+
+<!--  <div class="card card3">-->
+<!--    <img src="assets/card_img.jpg">-->
+<!--    <div class="card-content">-->
+<!--      <h1>Card title</h1>-->
+<!--      <p>-->
+<!--        lorem ipsum dolor sit amet, consectetur adipiscing elit,-->
+<!--        sed do eiusmod tempor incididunt ut labore-->
+<!--      </p>-->
+<!--      <div class="btn-wrapper">-->
+<!--        <button class="btn">Buy Now</button>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+
+<!--</div>-->
+
+<input type="text" name="name" (paste)="onpastefn($event)" title="Title" />
+<div>
+    <a href="#" [appTestdirective]="'https://www.google.com'">google</a>
+</div>
+<button (click)="one()">one</button>
+<button (click)="two()">Two</button>
+<button (click)="two()">Two</button>
+<button (click)="otherRouting()">otherRouting</button>
+
+<h1>TEST ROUTING</h1>
+<a [routerLink]="[{outlets:{greenColor:['green']}}]">GREEN </a>
+<a [routerLink]="[{outlets:{redColor:['red']}}]">RED </a>
+<a [routerLink]="[{outlets:{redColor:['mm']}}]">MOHAMED </a>
+<router-outlet></router-outlet>
+<div style="color: green;">
+    <router-outlet name="greenColor"></router-outlet>
+</div>
+<div style="color:red;">
+    <router-outlet name="redColor" skipLocationChange ></router-outlet>
+</div>
